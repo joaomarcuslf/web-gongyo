@@ -1,0 +1,99 @@
+html,
+body,
+body * {
+  overflow: hidden;
+}
+
+.container {
+  padding-top: 13px;
+}
+
+.is-fullheight {
+  height: 100vh;
+}
+
+.is-fullwidth {
+  width: 100%;
+}
+
+.status {
+  display: block;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.is-vertical {
+  flex-wrap: wrap;
+}
+
+.flex.is-justified-between {
+  justify-content: space-between;
+}
+
+.flex.is-justified-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.effect-button {
+  width: 100%;
+}
+
+.effect-button.yellow {
+  background: darkgoldenrod;
+}
+
+.effect-button.blue {
+  background: aquamarine;
+}
+
+.effect-button.candle {
+  background: slategray;
+}
+
+.effect-button.candle.on {
+  background: tomato;
+  animation-name: candle;
+  animation-duration: .3s;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+}
+
+
+.column {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.gohonzon {
+  padding: 5px;
+}
+
+@keyframes candle {
+  0% {
+    background: linear-gradient(-45deg, tomato, red);
+  }
+
+  20% {
+    background: linear-gradient(-35deg, red, orange);
+  }
+
+  40% {
+    background: linear-gradient(-15deg, orange, tomato);
+  }
+
+  60% {
+    background: linear-gradient(15deg, tomato, orange);
+  }
+
+  80% {
+    background: linear-gradient(35deg, orange, red);
+  }
+
+  100% {
+    background: linear-gradient(45deg, red, tomato);
+  }
+}
